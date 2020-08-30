@@ -1,0 +1,15 @@
+Most people wouldn't dare try Summoning, you know.
+
+On the table in front of you are three bubbling potions.
+The violet one reeks of sulfur and mustard.
+The green one smells like mint and something - something 
+that makes your head oddly fuzzy. 
+The blue one smells like camphor and old wine.
+
+You've drawn the runes on the floor precisely, and meditated
+for forty days and nights. Now, according to the Ancient Tome,
+it's time to drink one of the potions. Do you drink:
+
+[1] the violet one
+[2] the green one
+[3] the blue one

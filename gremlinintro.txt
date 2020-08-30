@@ -1,0 +1,14 @@
+You are a Gremlin, frolicking in the chaos amidst
+the living books clattering on the shelves of the 
+Library. Normally, everything is a delight - tearing
+ancient pages out of ancient texts, mistranslating
+old peace entreaties - but now something is wrong in
+the East Corridor. Smoke belches under the door, and
+the books inside are glowing the wrong color.
+
+At least, you think it's the books. Something is glowing
+in there, and you're not going to check it out.
+
+Unless you are. Do you:
+[1] leave a note for the Janitor and otherwise ignore it?
+[2] creep into the East Corridor.

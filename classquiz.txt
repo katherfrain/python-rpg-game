@@ -5,3 +5,15 @@ Do you:
 [2] you must mean a tortoise - what is a turtle doing in the desert?
 [3] kick it over so it doesn't pee on you.
 ~
+There are three white foxes on a red sand dune. 
+One of them always lies, one tells the truth, and one only sits there
+and bleeds from his eyes. Which one do you offer meat?
+[1] to the Watcher I give this offering.
+[2] to the Speaker I give this offering.
+[3] to the Liar I give this offering.
+~
+What lie do you tell yourself? 
+[1] the world will continue like this.
+[2] good intentions are enough.
+[3] there's nothing after this.
+~

@@ -1,0 +1,29 @@
+You hate going to the Librarian's room.
+Smells like magic and charcoal - which, 
+if anyone asked you, is a damn suspicious
+thing for a Librarian's room to smell like.
+No one ever asks you.
+
+*******************************************
+*******************************************
+
+"Ah, Janitor. Good to see you," says the 
+Librarian. She's twiddling with a glass beaker
+filled with what looks like viscous starlight.
+"Is this about the East Corridor?"
+
+"Nah, about the Southern Castle."
+
+She relaxes.
+
+"Bloody - of course it's about the East Corridor.
+What's *in* there?"
+
+The Librarian sighs. "I'm afraid just telling you
+would make more of it. Look, take this."
+She holds out a sword.
+
+Do you:
+
+[1] Take the Vorpal Sword?
+[2] Tell the Librarian you can do it alone.
