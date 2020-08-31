@@ -1,6 +1,4 @@
 import random
-import pygame
-
 
 class Alive:
     def __init__(self, health, power):
@@ -144,7 +142,7 @@ class Battle(object):
     def do_battle(self, protagonist, enemy):
         self.protagonist = protagonist
         self.enemy = enemy
-        print(f"You, {self.protagonist}, have chosen to face down {self.enemy}.")
+        print(f"You, {self.protagonist.name}, have chosen to face down {self.enemy.name}.")
         protagonist.print_status()
         enemy.print_status()
         while protagonist.is_alive() and enemy.is_alive(): 
@@ -175,7 +173,6 @@ class Battle(object):
                     print("You return to mopping messes by the Help Desk.")
                     print("FINISH")
                     protagonist.health = 0
-            return protagonist.is_alive()
 
 
 def startercode():
@@ -252,7 +249,7 @@ class Vorpal(object):
         protagonist.power = protagonist.power + 10
         protagonist.print_status()
 
-class Diamond(object)
+class Diamond(object):
     name = 'Diamond of Transformation'
     def apply(self, protagonist):
         change = input('Would you like your world to change? ').lower()
@@ -293,10 +290,11 @@ def main():
 
     you_and_dragon_live = player.is_alive() and melchior.is_alive()
     you_and_melchior_live = player.is_alive() and dragon.is_alive()
+
+    print(f"You have started out as {player.name} the {player.classname}.")
+
+    while you_and_dragon_live and you_and_melchior_live:
     
-    while you_and_dragon_live or you_and_melchior_live:
-        print(f"You have started out as {player.name} the {player.classname}.")
-        
         if player.classname == 'Janitor':
             outcome = player.discoverscene('EastCorridor')
             if outcome == 'LibrarianRoom':
@@ -354,6 +352,9 @@ def main():
                 print("Baphomat bows to your mighty commands.")
                 print("The East Corridor trembles and shakes, and your eyes gleam with lightning.")
                 print("Soon, you will conquer the world.")
+    
+        you_and_dragon_live = player.is_alive() and melchior.is_alive()
+        you_and_melchior_live = player.is_alive() and dragon.is_alive()        
 
 main()
 
