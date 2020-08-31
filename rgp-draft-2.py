@@ -14,11 +14,14 @@ class Alive:
         return enemy.health
     
     def print_status(self):
-        print(f'{self.name} has {self.health} HP remaining and {self.power} power.')
+        print(f'{self.name} has {self.health} HP remaining and {self.power} power.\n')
 
     def get_item(self, item):
-        item.apply(self, self)
-           
+        try:
+            item.apply(self, self)
+        except TypeError:
+            item.apply(self)
+    
 class Janitor(Alive):
     def __init__(self, health, power):
         self.health = health
@@ -156,7 +159,9 @@ class Battle(object):
                 print(f'You have done the enemy {protagonist.power} damage - their health is now {enemy.health}.')
                 print(f'Unfortunately, they got a shot in too - your health is {protagonist.health}.')
                 if protagonist.is_alive() and not enemy.is_alive():
-                    print("You win")
+                    print("You win!")
+                    print(f"You have defeated {enemy.name}, and in doing so returned peace to the Library.")
+                    print("FINISH")
                 elif not protagonist.is_alive() and enemy.is_alive():
                     print("You died!")
             elif choices == "2":
@@ -176,6 +181,8 @@ class Battle(object):
                     print("You return to mopping messes by the Help Desk.")
                     print("FINISH")
                     protagonist.health = 0
+            else:
+                print("Pick a legal choice. ")
 
 def startercode():
     levelinput = 0
@@ -206,6 +213,9 @@ def startercode():
                             librarian_count =+ 1
                         elif answer == "3":
                             gremlin_count =+ 1
+                        else:
+                            print("Answer the question legally, gremlin.")
+                            gremlin_count = +1
                     else:
                         print(question)
                 except IndexError:
@@ -247,6 +257,9 @@ def startercode():
                 elif librarian_count == janitor_count:
                     print("Smart and well-rounded. I know what to do.")
                     return Janitor(health + 2, power + 2)
+            else:
+                print("What did you DO?")
+                return Janitor(health - 3, power - 3)
 
 class Vorpal(object):
     name = 'Vorpal Sword'
@@ -293,6 +306,8 @@ class TreasureRoom(object):
                         take = True
                     elif takethis == "diamond" or takethis == "gem":
                         protagonist.get_item(Diamond)
+                    else:
+                        print("I didn't understand that. Try again? ")
             print("You feel brave enough to take on the beast now.")                    
 
 def main():
@@ -307,6 +322,7 @@ def main():
     you_and_melchior_live = player.is_alive() and dragon.is_alive()
 
     print(f"You have started out as {player.name} the {player.classname}.")
+    player.print_status()
 
     while you_and_dragon_live and you_and_melchior_live:
     
